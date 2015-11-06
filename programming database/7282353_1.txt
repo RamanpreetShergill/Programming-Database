@@ -1,0 +1,145 @@
+﻿Ramanpreet Kaur Shergill
+7282353
+Assignment 1
+ 
+List all data from the AcademicStatus table
+code explanation               frenchExplanation
+---- ------------------------- -------------------------
+D    Discontinued              Abandonnées
+N    Normal                    À temps plein, actif
+S    Suspended                 Suspendue
+
+(3 row(s) affected)
+
+List number and academicStatusCode for all students who have been discontinued. List the results in descending order by number
+number  AcademicStatusCode
+------- ------------------
+7826662 D
+5613716 D
+5582770 D
+5123120 D
+3223278 D
+2238665 D
+1335314 D
+
+(7 row(s) affected)
+
+List number and academicStatusCode for all students who have been discontinued or suspended. List the results in ascending order by number. Use OR. Do not use NOT or !=
+number  AcademicStatusCode
+------- ------------------
+1335314 D
+2238665 D
+3223278 D
+5123120 D
+5166111 S
+5473160 S
+5582770 D
+5613716 D
+5832548 S
+6484885 S
+7826662 D
+8412280 S
+8588766 S
+
+(13 row(s) affected)
+
+List number and academicStatusCode for all students who have been discontinued or suspended. List the results in ascending order by number. Use NOT. Do not use OR or !=
+number  AcademicStatusCode
+------- ------------------
+1335314 D
+2238665 D
+3223278 D
+5123120 D
+5166111 S
+5473160 S
+5582770 D
+5613716 D
+5832548 S
+6484885 S
+7826662 D
+8412280 S
+8588766 S
+
+(13 row(s) affected)
+
+List number and academicStatusCode for all students who have been discontinued or suspended. List the results in ascending order by number. Use !=. Do not use OR or NOT
+number  AcademicStatusCode
+------- ------------------
+1335314 D
+2238665 D
+3223278 D
+5123120 D
+5166111 S
+5473160 S
+5582770 D
+5613716 D
+5832548 S
+6484885 S
+7826662 D
+8412280 S
+8588766 S
+
+(13 row(s) affected)
+
+List the countries persons are from, but show each country code only once
+countryCode
+-----------
+CAN
+CHN
+IND
+NGA
+POL
+USA
+
+(6 row(s) affected)
+
+College management would like to see the new values that will result if all incidental fees are increased by 10%
+Show item aliased as ‘Incidental Fee Item’. Show amountPerSemester aliased as ‘Current Fee’. Use an expression to calculate the increased fee and alias the output as ‘Increased Fee’
+Order the results in ascending order by item
+Incidental Fee Item                                          Current Fee           Increased Fee
+------------------------------------------------------------ --------------------- ---------------------
+Administration Fee                                           20.60                 22.66
+CSA Fee                                                      4.50                  4.95
+CSI Association Fee - Doon Campus                            77.50                 85.25
+CSI Capital Development Fee - Doon Campus                    52.77                 58.047
+CSI Health Plan                                              185.68                204.248
+Graduation/Alumni Services Fee                               18.56                 20.416
+Recreation/Athletics Fee                                     63.17                 69.487
+Student Priority Fee                                         45.46                 50.006
+Technology Enhancement Fee                                   117.05                128.755
+
+(9 row(s) affected)
+
+List all data for students with finalmark less than (but not equal to) 55 and greater than 0
+CourseOfferingId studentNumber finalMark
+---------------- ------------- ----------------------
+9                3526415       53
+9                5767777       54
+9                5785845       50
+9                8653370       51
+19               1114453       52
+19               6471585       51
+19               8317323       54
+29               2866564       52
+29               3117777       53
+29               5727664       53
+29               8414815       53
+
+(11 row(s) affected)
+
+List the number of any room that has a capacity greater than or equal to 40, is a lab, has computers with 4GB memory, and is located at the Doon campus
+number
+------
+2A220 
+
+(1 row(s) affected)
+
+List all employees who teach in the School of Trades and Apprenticeship and are located at the Doon, Guelph or Waterloo campus
+number  reportsTo campusCode schoolCode location                       businessPhone                  extension fax            encryptedSin
+------- --------- ---------- ---------- ------------------------------ ------------------------------ --------- -------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6860242 NULL      D          TAP        3B21                           (519) 748-5220                 1795      (519) 189-3239 0x0081A40951468C468337321CBB53256601000000D641887457F4739A4F4FC29F9EDD8DE4D98FA3DDDEBF41DA1E4E2C331872A6CC
+6886352 8436780   G          TAP        23                             (519) 748-5220                 6742      NULL           0x0081A40951468C468337321CBB53256601000000DC0E9C284BEAAF3BB0F4B8D9E06A779A38099CFE62867451108E45C341153520
+8436780 NULL      D          TAP        4B179                          (519) 748-5220                 7361      (519) 189-3239 0x0081A40951468C468337321CBB532566010000001AC8552E9F669AF61EC4B9D61BF34A71C2C78629E792D2893E013D42F9D8CC65
+
+(3 row(s) affected)
+
